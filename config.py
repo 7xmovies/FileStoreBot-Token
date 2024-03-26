@@ -10,19 +10,19 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6353124673:AAHHq_bEVD_ry9QqcDIr1FehEgeR7wH_dvM")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6832302226:AAFas_mCbhRD9M8eZe34JWFkBBnSz6o1e-w")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "20919880"))
+APP_ID = int(os.environ.get("APP_ID", "21489763"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "0bb61198c9b5740cd2987d58f78be06d")
+API_HASH = os.environ.get("API_HASH", "308f5362db7844a59272c33634e9e792")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002116501788"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1005100345229"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6474779115"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5100345229"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
@@ -39,15 +39,15 @@ TUT_VID = os.environ.get("TUT_VID","help_7xmovies/3")
 
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001729492229"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001933966820"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI am only a file provider from my owner we dont own any file.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6474779115").split()):
+    for x in (os.environ.get("ADMINS", "5100345229 6159530722 5985318277 5922250004 6474779115").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -56,7 +56,7 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "This video/Photo/anything is available on the internet. We LeakHubd or its subsidiary channel doesn't produce any of them.")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "This video/Photo/anything is available on the internet. We  or its subsidiary channel doesn't produce any of them.")
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
@@ -64,11 +64,11 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 #Set true if you want Disable your Channel Posts Share button
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
-BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
+BOT_STATS_TEXT = "{first} welcome <b>BOT UPTIME</b>\n{uptime}"
+USER_REPLY_TEXT = "❌Don't send me messages I'm only File Share bot!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(6852649461)
+ADMINS.append(5100345229 6159530722 5985318277 5922250004 6474779115)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
